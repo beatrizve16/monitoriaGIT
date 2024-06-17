@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "beas library 2.0",
+			"path": ".."
+		},
+		{
+			"name": "books",
+			"path": "../../../../Desktop/books"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "beas library 2.0"
+	}
+}
