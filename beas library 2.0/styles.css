@@ -36,11 +36,6 @@ header {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.header-content nav a:hover {
-    color: #000;
 }
 
 main {
@@ -48,22 +43,32 @@ main {
 }
 
 .landing {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
 }
 
 .landing h1 {
     font-size: 2.5rem;
+    margin: 0;
+    font-style: italic;
 }
 
-.landing .subheading {
-    font-size: 1.2rem;
+.landing p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 2rem 0;
+}
+
+.landing img.welcome-image {
+    max-width: 100%;
+    margin-bottom: 2rem;
 }
 
 .buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
 }
 
 .btn {
@@ -74,6 +79,40 @@ main {
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
+}
+
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.auth-text-image {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.auth-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.auth-form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #A48885;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 .browse-page {
@@ -98,66 +137,87 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
 }
 
-.add-book {
-    margin-top: 2rem;
-}
-
-.add-book .btn {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-}
-
-.cart-page {
+.book-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 2rem);
+    box-sizing: border-box;
 }
 
-.cart-page #empty-cart-message {
-    margin-top: 2rem;
+.book-item img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.book-item h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.book-item button {
+    background-color: #A48885;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-page #cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cart-item button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item input {
+    width: 50px;
     text-align: center;
 }
 
-.cart-page #empty-cart-message img {
-    max-width: 100%;
-    margin-bottom: 1rem;
-}
-
-.cart-page #empty-cart-message p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.add-book-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.empty-cart-message {
+    text-align: center;
     margin-top: 2rem;
 }
 
-.add-book-page h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.add-book-page form {
-    max-width: 400px;
-    width: 100%;
-}
-
-.add-book-page form div {
+.empty-cart-message p {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.add-book-page form label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+.empty-cart-message .btn {
+    background-color: #A48885;
+    padding: 1rem 2rem;
 }
-
-.add-book-page form input[type="file"] {
-    margin-top: 0.5rem;
-}
-
-
