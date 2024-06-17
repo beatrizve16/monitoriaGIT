@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Book - Bea's Little Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="2.png" alt="Bea's Little Library" class="logo">
+            <h1>Bea's Little Library</h1>
+            <nav>
+                <a href="cart.html">Your Cart</a>
+                <a href="browse.html">Browse</a>
+            </nav>
+        </div>
+    </header>
+    <main class="add-book-page">
+        <h2>Add a New Book</h2>
+        <form id="add-book-form">
+            <div>
+                <label for="book-image">Upload Book Cover:</label>
+                <input type="file" id="book-image" accept="image/*" required>
+            </div>
+            <div>
+                <label for="book-name">Book Name:</label>
+                <input type="text" id="book-name" required>
+            </div>
+            <button type="submit" class="btn">Save Book</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

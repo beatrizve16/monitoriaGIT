@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #A48885;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content img.logo {
+    border-radius: 50%;
+    height: 50px;
+    width: 80px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.header-content h1 {
+    margin: 0;
+    cursor: pointer;
+}
+
+.header-content nav a {
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.header-content nav a:hover {
+    color: #000;
+}
+
+main {
+    padding: 2rem;
+}
+
+.landing {
+    text-align: center;
+}
+
+.landing h1 {
+    font-size: 2.5rem;
+}
+
+.landing .subheading {
+    font-size: 1.2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #A48885;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.browse-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.add-book {
+    margin-top: 2rem;
+}
+
+.add-book .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart-page #empty-cart-message {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cart-page #empty-cart-message img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.cart-page #empty-cart-message p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.add-book-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.add-book-page h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.add-book-page form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.add-book-page form div {
+    margin-bottom: 1rem;
+}
+
+.add-book-page form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.add-book-page form input[type="file"] {
+    margin-top: 0.5rem;
+}
+
+
